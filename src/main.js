@@ -8,11 +8,9 @@ new Vue({
 	data:{
 		genre:[],
 		time:[]
-	}
+	},
 	methods:{
 		checkFilter(category,title,checked){
-			// this.$emit('check-filter',category,title,checked);
-			console.log(category,title,checked);
 			if(checked){
 				this[category].push(title)
 			}else{
@@ -32,12 +30,14 @@ new Vue({
 			</div>`,
 			data:function(){
 				return {movies:[
-					{title:'PopFiction'},
-					{title: 'HomeAlone'},
-					{title:'AustinPowers'}
+					{title:'PopFiction',genre:genres.CRIME},
+					{title: 'HomeAlone',genre:genres.COMEDY},
+					{title:'AustinPowers',genre:genres.COMEDY}
 				]
-			};
-		}
+      }
+      },
+    props:['genre','time']
+
 	},
 		'movie-filter':{
 			data(){
