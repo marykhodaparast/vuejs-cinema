@@ -3,6 +3,8 @@ import './style.scss'
 
 import MovieFilter from './components/MovieFilter.vue'
 import MovieList from './components/MovieList.vue'
+import VueResourse from 'vue-resource'
+Vue.use(VueResourse)
 
 new Vue({
 	el:'#app',
@@ -25,5 +27,8 @@ new Vue({
 	components:{
 	MovieList,
 	MovieFilter
+	},
+	created(){
+      console.log(this.$http);
 	}
 });
