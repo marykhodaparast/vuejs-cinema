@@ -8,6 +8,9 @@
                  <h2>{{ movie.Title }}</h2>
                  <span class="movie-rating">{{ movie.Rated }}</span>
              </div>
+             <div class="movie-sessions">
+
+             </div>
          </div>
     </div>
 </template>
