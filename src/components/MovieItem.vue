@@ -17,7 +17,7 @@
 
 <script>
 export default {
-    props:['movie']
+    props:['movie','sessions']
 }
 </script>
 <style lang="">
