@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import './style.scss'
-
 import Overview  from './components/Overview.vue'
+
 import VueResourse from 'vue-resource'
 Vue.use(VueResourse)
 import moment from 'moment-timezone';
