@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import './style.scss'
-import Overview  from './components/Overview.vue'
+//import Overview  from './components/Overview.vue'
 
 import VueResourse from 'vue-resource'
 Vue.use(VueResourse)
@@ -26,9 +26,6 @@ new Vue({
 		moment,
         day:moment(),
 		bus
-	},
-	components:{
-      Overview
 	},
 	created(){
       this.$http.get('/api').then(response => {
