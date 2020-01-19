@@ -40,7 +40,10 @@ new Vue({
 });
 Vue.directive('tooltip',{
   bind(el,bindings){
-      console.log(el);
+    let span = document.createElement('SPAN');
+    let text = document.createTextNode('seats available : 200');
+    span.appendChild(text);
+    el.appendChild(span);
   }
 });
 
