@@ -1,7 +1,9 @@
 <template>
     <div id="day-select">
         <ul class="days">
-            <li v-bind:class="{day : true,active:isActive(day)}" v-for="day in days" v-on:click="selectDay(day)">{{formatDay(day)}}</li>
+            <li v-bind:class="{day : true,active:isActive(day)}" v-for="day in days" v-on:click="selectDay(day)">
+                {{formatDay(day)}}
+            </li>
         </ul>
     </div>
 </template>
